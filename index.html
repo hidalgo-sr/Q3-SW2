@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- BS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Style -->
+		<style>
+			body {
+				background-color: whitesmoke;
+				align-content: center;
+				justify-content: center;
+				text-align: left;
+			}
+
+			.container {
+				background-color: white;
+				padding: 5px;
+			}
+
+			.main {
+				background-color: #ffffff;
+				width: 760px;
+				padding: 15px;
+				box-shadow: 0 20px 35px rgba(220,53,69,255);
+				border: 2px solid white;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<h1 style="color:#dc3545;">User Registration</h1>
+			<form>
+				<div class="row username mb-3">
+					<label for="inputUsername">Username:</label>
+					<div class="col-sm-12">
+		        		<input type="username" id="inputUsername" placeholder="Enter your username" class="form-control">
+		        	</div>
+				</div>
+
+				<div class="row email mb-3">
+					<label for="inputEmail">Email Address:</label>
+					<div class="col-sm-12">
+		        		<input type="email" id="inputEmail" placeholder="Enter your email" class="form-control">
+		        	</div>
+				</div>
+
+				<div class="row password mb-3">
+					<label for="inputPassword">Password:</label>
+					<div class="col-sm-12">
+		        		<input type="password" id="inputPassword" placeholder="Enter your password" class="form-control">
+		        	</div>
+				</div>
+
+				<div class="row cpassword mb-3">
+					<label for="inputCpassword">Confirm Password:</label>
+					<div class="col-sm-12">
+		        		<input type="cpassword" id="inputCpassword" placeholder="Confirm your password" class="form-control">
+		        	</div>
+				</div>
+
+	        	<div class="agree mb-3">
+	            	<input type="checkbox" id="checkAgree">
+	            	<label for="checkAgree">I have read and agreed to the terms and conditions</label>
+	        	</div>
+				<button type="submit" class="btn btn-danger">Register</button>
+			</form>
+		</div>
+	</body>
+</html>
